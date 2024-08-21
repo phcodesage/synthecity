@@ -1,0 +1,156 @@
+.container {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav a {
+    color: #444444;
+    text-decoration: none;
+    font-weight: 600;
+  }
+  
+  .nav .activeLink {
+    color: #6953d3;
+  }
+  
+  .joinUs {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: 1px solid #444444;
+    border-radius: 50px;
+    padding: 5px 15px;
+  }
+  
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+  }
+  
+  .heroContent {
+    max-width: 50%;
+  }
+  
+  .heroContent h1 {
+    font-size: 70px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+  
+  .gradient {
+    background: linear-gradient(97.09deg, #6953d3, #8566f1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .heroContent p {
+    font-size: 20px;
+    color: rgba(51, 51, 51, 0.6);
+    margin-bottom: 30px;
+  }
+  
+  .ctaButton {
+    background-color: #f98085;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 30px;
+    font-size: 22px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .services {
+    margin-top: 100px;
+    text-align: center;
+  }
+  
+  .services h2 {
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 50px;
+  }
+  
+  .serviceImages {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+  }
+  
+  .footer {
+    background-color: #f9f4f4;
+    padding: 50px 0;
+    margin-top: 100px;
+  }
+  
+  .footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  
+  .copyright {
+    text-align: center;
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.6);
+  }
+  
+  @media (max-width: 768px) {
+    .header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .joinUs {
+      margin-top: 20px;
+    }
+  
+    .hero {
+      flex-direction: column;
+    }
+  
+    .heroContent {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .heroContent h1 {
+      font-size: 40px;
+    }
+  
+    .heroImage {
+      margin-top: 30px;
+    }
+  
+    .serviceImages {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footerContent {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+  }
