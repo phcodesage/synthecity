@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+body {
+  margin: 0;
+  line-height: normal;
+}
+:root {
+  --font-inter: Inter;
+  --font-size-mini: 15px;
+  --font-size-lg: 18px;
+  --font-size-21xl: 40px;
+  --font-size-6xl: 25px;
+  --font-size-4xs: 9px;
+  --font-size-mid: 17px;
+  --font-size-xl: 20px;
+  --font-size-3xl: 22px;
+  --font-size-109xl: 128px;
+  --font-size-base: 16px;
+  --color-white: #fff;
+  --color-darkslategray-100: #444;
+  --color-darkslategray-200: #333;
+  --color-darkslategray-300: rgba(68, 68, 68, 0.8);
+  --color-gray: rgba(0, 0, 0, 0.6);
+  --color-slateblue: #6953d3;
+  --color-gainsboro: #d9d9d9;
+  --color-whitesmoke: #f9f4f4;
+  --color-lavender-100: #eae5ff;
+  --br-11xl: 30px;
+  --br-31xl: 50px;
+  --br-8xs: 5px;
+  --br-mini: 15px;
+  --br-6xl: 25px;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-inter), sans-serif;
+  line-height: 1.5;
+  color: var(--color-darkslategray-100);
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: var(--color-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-size: var(--font-size-xl);
+  font-weight: 700;
+  color: var(--color-slateblue);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--color-darkslategray-100);
+  font-size: var(--font-size-mid);
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: var(--color-slateblue);
+}
+
+.hero {
+  background-color: var(--color-whitesmoke);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: var(--font-size-21xl);
+  color: var(--color-darkslategray-200);
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: var(--font-size-lg);
+  color: var(--color-darkslategray-300);
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--color-slateblue);
+  color: var(--color-white);
+  padding: 0.75rem 1.5rem;
+  border-radius: var(--br-31xl);
+  text-decoration: none;
+  font-size: var(--font-size-lg);
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5642b8;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+      display: none;
+  }
+
+  .hero h1 {
+      font-size: var(--font-size-6xl);
+  }
+
+  .hero p {
+      font-size: var(--font-size-base);
+  }
+}
